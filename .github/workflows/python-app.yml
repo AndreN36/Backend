@@ -38,10 +38,13 @@ jobs:
             ${{ runner.os }}-poetry-
 
       - name: Instalar dependências
+        working-directory: ./
         run: |
+          ls -lah
           poetry config virtualenvs.in-project true
           poetry install --no-root --no-interaction
 
       - name: Rodar testes com pytest
+        working-directory: ./
         run: |
           poetry run pytest
