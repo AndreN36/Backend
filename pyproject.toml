@@ -2,10 +2,10 @@
 name = "backend"
 version = "0.1.0"
 description = ""
-authors = ["Andre andre.lnf3@gmail.com"]
+authors = ["Andre Niemczyk <andre.lnf3@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = ">=3.10,<4.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"

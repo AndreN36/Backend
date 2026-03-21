@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["Andre Niemczyk <andre.lnf3@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+uvicorn = "^0.42.0"
+fastapi = "^0.135.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
