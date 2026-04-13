@@ -16,7 +16,7 @@ Antes de começar, você precisa ter instalado:
 ## 📥 Como clonar o repositório
 
 ```bash
-git clone <URL_DO_REPOSITORIO>
+git clone https://github.com/AndreN36/fastapi-docker-poetry.git
 cd fastapi-docker-poetry
 ```
 
@@ -90,7 +90,7 @@ docker compose logs -f
 O container está configurado com política de reinício automático:
 
 ```yaml
-restart: unless-stopped
+restart: always
 ```
 
 Isso garante que ele será reiniciado automaticamente em caso de falha.
