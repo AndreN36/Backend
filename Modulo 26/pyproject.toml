@@ -8,6 +8,7 @@ authors = ["Andre Niemczyk <andre.lnf3@gmail.com>"]
 python = "^3.12"
 uvicorn = "^0.42.0"
 fastapi = "^0.135.2"
+redis = "^5.0.0"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.0"
