@@ -52,4 +52,4 @@ jobs:
 
       - name: Rodar testes com pytest
         run: |
-          poetry run pytest "Modulo 32/test_auth.py"
+          poetry run pytest "Modulo 32/test_tasks.py"
