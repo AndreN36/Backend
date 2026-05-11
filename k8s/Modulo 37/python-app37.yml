@@ -35,6 +35,12 @@ jobs:
       - name: Run tests
         run: poetry run pytest
 
+      - name: Debug files
+        run: |
+         pwd
+         ls -la
+         find . -name "Dockerfile" -o -name "dockerfile"  
+
       - name: Build Docker image
         run: docker build -t fastapi-app:latest "k8s/Modulo 37"
 

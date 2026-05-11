@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ "main" ]
 
+defaults:
+  run:
+    working-directory: "k8s/Modulo 37"
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -31,8 +35,14 @@ jobs:
       - name: Run tests
         run: poetry run pytest
 
+      - name: Debug files
+        run: |
+         pwd
+         ls -la
+         find . -name "Dockerfile" -o -name "dockerfile"  
+
       - name: Build Docker image
-        run: docker build -t fastapi-app:latest .
+        run: docker build -t fastapi-app:latest "k8s/Modulo 37"
 
       - name: Test Docker container
         run: |
