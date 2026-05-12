@@ -48,7 +48,7 @@ jobs:
          find . -name "Dockerfile" -o -name "dockerfile"  
 
       - name: Build Docker image
-        run: docker build -t fastapi-app:latest "k8s/Modulo 37"
+        run: docker build -t fastapi-app:latest .
 
       - name: Test Docker container
         run: |
